@@ -1,0 +1,227 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+}
+
+header {
+    background-color: #1e293b;
+    color: white;
+    padding: 20px 30px;
+}
+
+header h1 {
+    margin: 0 0 18px;
+}
+
+nav {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 0;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+aside {
+    width: 220px;
+    min-height: 60vh;
+    padding: 24px;
+    background-color: #e2e8f0;
+    float: left;
+}
+
+aside nav {
+    display: block;
+}
+
+aside nav a {
+    display: inline-block;
+    color: #1e293b;
+}
+
+main {
+    margin-left: 220px;
+    padding: 30px;
+}
+
+section {
+    background-color: white;
+    padding: 24px;
+    margin-bottom: 24px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #0000000d;
+}
+
+article {
+    padding: 16px;
+    background-color: #f8fafc;
+    border-left: 4px solid #2563eb;
+}
+
+footer {
+    clear: both;
+    background-color: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 16px;
+}
+
+@media (max-width: 600px) {
+    aside {
+        float: none;
+        width: 100%;
+        min-height: auto;
+    }
+
+    main {
+        margin-left: 0;
+        padding: 16px;
+    }
+
+    header {
+        padding: 20px;
+    }
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+caption {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+th,
+td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+    background-color: #eaf0f8;
+}
+
+tbody tr:hover {
+    background-color: #f8fafc;
+}
+
+@media (max-width: 600px) {
+    section {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 550px;
+    }
+}
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px;
+    border: 1px solid #94a3b8;
+    border-radius: 6px;
+    font: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: 3px solid #93c5fd;
+    border-color: #1d4ed8;
+}
+
+fieldset {
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #1d4ed8;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font: inherit;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1e40af;
+}
+
+button:focus-visible {
+    outline: 3px solid #93c5fd;
+    outline-offset: 3px;
+}
+
+dialog {
+    width: min(90%, 450px);
+    padding: 28px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 10px 35px #00000033;
+    color: #1e293b;
+}
+
+dialog::backdrop {
+    background: #0f172a99;
+}
+
+dialog h2 {
+    margin-top: 0;
+}
+
+dialog p {
+    margin: 18px 0;
+}
+
+dialog button {
+    margin-top: 10px;
+}
+
+nav a[aria-current="page"] {
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+nav a:focus-visible {
+    outline: 3px solid #93c5fd;
+    outline-offset: 4px;
+    border-radius: 3px;
+}
